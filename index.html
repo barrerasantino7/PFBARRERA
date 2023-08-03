@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/3b40111a1a.js" crossorigin="anonymous"></script>
-    <!--<i class="fa-solid fa-cart-shopping"></i>-->
     <title>Document</title>
 </head>
 <body>
-
+                                                                                                         <!--Encabezado-->
     <header class="encabezado">
+
         <img class="encabezado__logo" src="img/icon/icon.png" alt="Casco Griego">
+
         <div class="encabezado__buscador">
+
             <input type="search" class="buscador-barra">
             <input type="submit" value="Buscar" class="buscador-btn">
-            <a href="#" class="buscador-carrito">Carrito</a>
+
+            <a href="#" class="buscador-carrito">Carrito<i class="fa-solid fa-cart-shopping"></i></a>
+
         </div>
     </header>
+                                                                                                          <!--Navegador-->
+    <nav class="navegador">
+        
+        <label for="check" class="navegador__menu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <input class="navegador__check" type="checkbox" id="check">
+
+        <ul class="navegador__lista">
+            <li><a class="lista-producto" href="#">Proteína</a></li>
+            <li><a class="lista-producto" href="#">Creatina</a></li>
+            <li><a class="lista-producto" href="#">BCAA</a></li>
+            <li><a class="lista-producto" href="#">Pre Entreno</a></li>
+            <li><a class="lista-producto" href="#">Quemadores</a></li>
+        </ul>
+    </nav>
     
 </body>
 </html>

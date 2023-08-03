@@ -16,7 +16,7 @@ $gris:rgb(73, 73, 73);
     padding: 0;
     box-sizing: border-box;
 }
-                                                 /*Encabezado*/
+                                                          /*Encabezado*/
 .encabezado{
     text-align: center;
     background-color: $color-fondo;
@@ -43,6 +43,35 @@ $gris:rgb(73, 73, 73);
             padding: 4px;
             font-family: roboto;
             border-radius: 5px;
+        }
+    }
+}
+                                                           /*Navegador*/ 
+.navegador{
+    background-color: $color-rojo-fuerte;
+    text-align: center;
+    .navegador__menu{
+        color: white;
+        font-size: 25px;
+    }
+    .navegador__lista{
+        display: none;
+        text-align: center;
+        li{
+            padding: 10px;
+            .lista-producto{
+                color: white;
+                text-decoration: none;
+                font-family: poppins;
+                text-align: center;
+                list-style: none;
+            }
+        }
+    }
+    .navegador__check{
+        display: none;
+        &:checked + .navegador__lista{
+            display: block;
         }
     }
 }

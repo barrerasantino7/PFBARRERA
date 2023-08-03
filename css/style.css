@@ -43,4 +43,34 @@
   border-radius: 5px;
 }
 
+/*Navegador*/
+.navegador {
+  background-color: rgb(90, 15, 15);
+  text-align: center;
+}
+.navegador .navegador__menu {
+  color: white;
+  font-size: 25px;
+}
+.navegador .navegador__lista {
+  display: none;
+  text-align: center;
+}
+.navegador .navegador__lista li {
+  padding: 10px;
+}
+.navegador .navegador__lista li .lista-producto {
+  color: white;
+  text-decoration: none;
+  font-family: poppins;
+  text-align: center;
+  list-style: none;
+}
+.navegador .navegador__check {
+  display: none;
+}
+.navegador .navegador__check:checked + .navegador__lista {
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */
