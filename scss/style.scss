@@ -1,6 +1,7 @@
 $color-rojo-fuerte:rgb(90, 15, 15);
 $color-fondo: #0f101a;
-$boton: rgb(25, 90, 95);
+$boton0: rgb(42, 72, 107);
+$boton1: rgb(25, 90, 95);
 $gris:rgb(73, 73, 73);
 @font-face {
     font-family: poppins;
@@ -9,4 +10,39 @@ $gris:rgb(73, 73, 73);
 @font-face {
     font-family: roboto;
     src: url(/fonts/roboto/Roboto-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                                                 /*Encabezado*/
+.encabezado{
+    text-align: center;
+    background-color: $color-fondo;
+    .encabezado__logo{
+        width: 10em;
+    }
+    .encabezado__buscador{
+        padding: 10px;
+        .buscador-btn{
+            border: none;
+            background-color: $boton0;
+            color: white;
+            font-size: 15px;
+            padding: 4px;
+            font-family: roboto;
+            border-radius: 5px;
+            margin: 0px 5px;
+        }
+        .buscador-carrito{
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            background-color: $boton0;
+            padding: 4px;
+            font-family: roboto;
+            border-radius: 5px;
+        }
+    }
 }
