@@ -9,6 +9,7 @@
         width: 170px;
         margin: 5px;
         padding: 5px;
+        background-color: white;
     
         .tarjeta-img{
             width: 160px;
@@ -36,54 +37,6 @@
                     span{
                         display: none;
                     }
-                }
-            }
-        }
-    }
-}
-                                                             /*Version de pc*/
-@media (min-width:1200px){
-    .contenedor-tarjeta{
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        box-shadow: 0px 0px 10px $color-fondo;
-        border-radius: 5px;
-        width: 250px;
-        margin: 10px;
-        padding: 5px;
-    
-        .tarjeta-img{
-            width: 200px;
-        }
-        .tarjeta-cuerpo{
-    
-            .precio-btn{
-                margin-top: 5px;
-                display: flex;
-                justify-content: space-between;
-                align-items: end;
-    
-                .precio{
-                    color: $gris;
-                }
-    
-                .boton-carrito{
-                    padding: 3px;
-                    font-size: 15px;
-                    border: none;
-                    border-radius: 3px ;
-                    color: white;
-                    background-color: $boton1;
-                    transition: 0.2s;
-                    margin: 3px;
-                    &:hover{
-                        transform: scale(1.1);
-                    }
-                    span{
-                        display: block;
-                    }
-    
                 }
             }
         }

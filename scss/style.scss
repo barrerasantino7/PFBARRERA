@@ -59,6 +59,7 @@ $gris:rgb(73, 73, 73);
         display: none;
         text-align: center;
         li{
+            list-style: none;
             padding: 10px;
             .lista-producto{
                 color: white;
@@ -95,4 +96,55 @@ $gris:rgb(73, 73, 73);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+                                                                           /*Responsive tablet*/
+@media (min-width:650px){
+    .contenedor{
+        .contenedor-tarjeta{
+            display: flex;
+            width: 250px;
+            margin: 10px;
+            .tarjeta-img{
+                width: 200px;
+            }
+            .tarjeta-cuerpo{
+                .precio-btn{
+                    .boton-carrito{
+                        padding: 3px;
+
+                        span{
+                            display: inline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+                                                                    /*Responsive PC*/
+@media (min-width:1200px){
+    .encabezado{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .buscador-barra{
+            width: 200px;
+        }
+    }
+
+    .navegador{
+
+        .navegador__menu{
+            display: none;
+        }
+        .navegador__lista{
+            display: flex;
+            justify-content: space-around;
+    
+        }
+    }
+    .contenedor{
+        margin: 50px 0px;
+    }
+
 }
