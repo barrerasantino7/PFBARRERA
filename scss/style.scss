@@ -3,6 +3,7 @@ $color-fondo: #0f101a;
 $boton0: rgb(42, 72, 107);
 $boton1: rgb(25, 90, 95);
 $gris:rgb(73, 73, 73);
+@import "tarjeta";
 @font-face {
     font-family: poppins;
     src: url(/fonts/poppins/Poppins-Medium.ttf);
@@ -29,7 +30,7 @@ $gris:rgb(73, 73, 73);
             border: none;
             background-color: $boton0;
             color: white;
-            font-size: 15px;
+            font-size: 16px;
             padding: 4px;
             font-family: roboto;
             border-radius: 5px;
@@ -38,7 +39,7 @@ $gris:rgb(73, 73, 73);
         .buscador-carrito{
             color: white;
             text-decoration: none;
-            font-size: 15px;
+            font-size: 16px;
             background-color: $boton0;
             padding: 4px;
             font-family: roboto;
@@ -62,6 +63,7 @@ $gris:rgb(73, 73, 73);
             .lista-producto{
                 color: white;
                 text-decoration: none;
+                font-size: 18px;
                 font-family: poppins;
                 text-align: center;
                 list-style: none;
@@ -74,4 +76,23 @@ $gris:rgb(73, 73, 73);
             display: block;
         }
     }
+}
+                                                          /*Nombre de la página e introducción*/
+.introduccion{
+    text-align: center;
+    margin: 15px;
+    font-family: poppins;
+}
+                                                          /*Categoria de los productos*/
+.categoria{
+    font-family: poppins;
+    color: $gris;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
