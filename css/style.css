@@ -13,6 +13,7 @@
 }
 .contenedor .contenedor-tarjeta .tarjeta-img {
   width: 160px;
+  cursor: pointer;
 }
 .contenedor .contenedor-tarjeta .tarjeta-cuerpo {
   font-family: poppins;
@@ -22,6 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: roboto;
 }
 .contenedor .contenedor-tarjeta .tarjeta-cuerpo .precio-btn .precio {
   color: rgb(73, 73, 73);
@@ -82,7 +84,7 @@
   font-size: 16px;
   padding: 4px;
   font-family: roboto;
-  border-radius: 5px;
+  border-radius: 2px;
   margin: 0px 5px;
   cursor: pointer;
 }
@@ -93,12 +95,13 @@
   background-color: rgb(42, 72, 107);
   padding: 4px;
   font-family: roboto;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 /*Navegador*/
 .navegador {
   background-color: rgb(90, 15, 15);
+  box-shadow: 0px 0px 5px;
   text-align: center;
 }
 .navegador .navegador__menu {
@@ -133,14 +136,6 @@
   animation-name: ampliar-subrayado;
   animation-duration: 0.3s;
 }
-@keyframes ampliar-subrayado {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
 .navegador .navegador__check {
   display: none;
 }
@@ -150,9 +145,22 @@
 
 /*Nombre de la página e introducción*/
 .introduccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin: 15px;
   font-family: poppins;
+}
+.introduccion .introduccion-animacion {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30PX;
+  width: 300px;
+  animation-name: escribiendo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /*Categoria de los productos*/
@@ -160,12 +168,30 @@
   display: flex;
   justify-content: center;
   font-family: poppins;
-  color: rgb(73, 73, 73);
+  color: white;
   font-size: 20px;
   margin: 20px;
+  background-color: rgb(90, 15, 15);
+  border-radius: 10px;
+  padding: 10px 0px;
 }
 .categoria h2 {
   cursor: pointer;
+  transition: 0.5s;
+}
+.categoria h2:hover::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  border-radius: 2px;
+  animation-name: ampliar-subrayado;
+  animation-duration: 0.5s;
+}
+.categoria h2:hover {
+  transform: scale(1.2);
 }
 
 .contenedor {
@@ -204,6 +230,26 @@ footer #copy {
   margin-top: 100px;
 }
 
+/*Animaciones*/
+@keyframes ampliar-subrayado {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes escribiendo {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 300px;
+  }
+  100% {
+    width: 0px;
+  }
+}
 /*Responsive tablet*/
 @media (min-width: 650px) {
   .contenedor .contenedor-tarjeta {

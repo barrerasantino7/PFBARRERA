@@ -39,7 +39,7 @@ $gris:rgb(73, 73, 73);
             font-size: 16px;
             padding: 4px;
             font-family: roboto;
-            border-radius: 5px;
+            border-radius: 2px;
             margin: 0px 5px;
             cursor: pointer;
         }
@@ -50,13 +50,14 @@ $gris:rgb(73, 73, 73);
             background-color: $boton0;
             padding: 4px;
             font-family: roboto;
-            border-radius: 5px;
+            border-radius: 2px;
         }
     }
 }
                                                            /*Navegador*/ 
 .navegador{
     background-color: $color-rojo-fuerte;
+    box-shadow: 0px 0px 5px;
     text-align: center;
     .navegador__menu{
         color: white;
@@ -91,15 +92,6 @@ $gris:rgb(73, 73, 73);
             }
         }
     }
-    @keyframes ampliar-subrayado {
-        0%{
-            width: 0%;
-        }
-        100%{
-            width: 100%;
-        }
-        
-    }
     .navegador__check{
         display: none;
         &:checked + .navegador__lista{
@@ -109,20 +101,51 @@ $gris:rgb(73, 73, 73);
 }
                                                           /*Nombre de la página e introducción*/
 .introduccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: 15px;
     font-family: poppins;
+    .introduccion-animacion{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30PX;
+        width: 300px;
+        animation-name: escribiendo;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        white-space: nowrap;
+        overflow: hidden;
+    }
 }
                                                           /*Categoria de los productos*/
 .categoria{ 
     display: flex;
     justify-content: center;
     font-family: poppins;
-    color: $gris;
+    color: white;
     font-size: 20px;
     margin: 20px;
+    background-color: $color-rojo-fuerte;
+    border-radius: 10px;
+    padding: 10px 0px;
     h2{
         cursor: pointer;
+        transition: 0.5s;
+        &:hover::before{
+            content: "";
+            width: 100%;
+            height: 3px;
+            position: absolute;
+            bottom: 0;
+            background-color: white;
+            border-radius: 2px;
+            animation-name: ampliar-subrayado;
+            animation-duration: 0.5s;
+        }
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 }
 .contenedor{
@@ -162,7 +185,30 @@ footer{
         margin-top: 100px;
     }
 }
-                                                                           /*Responsive tablet*/
+                                                               /*Animaciones*/
+@keyframes ampliar-subrayado {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+@keyframes escribiendo {
+    0%{
+        width: 0px;
+    }
+    50%{ 
+        width: 300px;
+
+    }
+    100%{
+        width: 0px;
+    }
+    
+}
+                                                                  /*Responsive tablet*/
 @media (min-width:650px){
     .contenedor{
         .contenedor-tarjeta{
