@@ -10,6 +10,7 @@
         margin: 5px;
         padding: 5px;
         background-color: white;
+        overflow: hidden;
     
         .tarjeta-img{
             width: 160px;
@@ -35,6 +36,11 @@
                     background-color: $boton1;
                     margin: 3px;
                     font-family: roboto;
+                    cursor: pointer;
+                    transition: .2s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                     span{
                         display: none;
                     }

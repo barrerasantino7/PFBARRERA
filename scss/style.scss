@@ -17,12 +17,18 @@ $gris:rgb(73, 73, 73);
     padding: 0;
     box-sizing: border-box;
 }
+
                                                           /*Encabezado*/
 .encabezado{
     text-align: center;
     background-color: $color-fondo;
     .encabezado__logo{
         width: 10em;
+        margin-top: 5px;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
     .encabezado__buscador{
         padding: 10px;
@@ -35,6 +41,7 @@ $gris:rgb(73, 73, 73);
             font-family: roboto;
             border-radius: 5px;
             margin: 0px 5px;
+            cursor: pointer;
         }
         .buscador-carrito{
             color: white;
@@ -58,6 +65,7 @@ $gris:rgb(73, 73, 73);
     .navegador__lista{
         display: none;
         text-align: center;
+        
         li{
             list-style: none;
             padding: 10px;
@@ -68,8 +76,29 @@ $gris:rgb(73, 73, 73);
                 font-family: poppins;
                 text-align: center;
                 list-style: none;
+                position: relative;
+                &:hover::before{
+                    content: "";
+                    width: 100%;
+                    height: 3px;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: white;
+                    border-radius: 2px;
+                    animation-name: ampliar-subrayado;
+                    animation-duration: 0.3s;
+                }
             }
         }
+    }
+    @keyframes ampliar-subrayado {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 100%;
+        }
+        
     }
     .navegador__check{
         display: none;
@@ -85,12 +114,16 @@ $gris:rgb(73, 73, 73);
     font-family: poppins;
 }
                                                           /*Categoria de los productos*/
-.categoria{
+.categoria{ 
+    display: flex;
+    justify-content: center;
     font-family: poppins;
     color: $gris;
     font-size: 20px;
-    text-align: center;
     margin: 20px;
+    h2{
+        cursor: pointer;
+    }
 }
 .contenedor{
     display: flex;
@@ -114,7 +147,7 @@ footer{
         text-align: center;
         color: white;
         h5{
-            font-size: 15px;
+            font-size: 20px;
         }
     }
     #sn{
@@ -126,7 +159,7 @@ footer{
     #copy{
         grid-area: f;
         color: $gris;
-        margin-top: 80px;
+        margin-top: 100px;
     }
 }
                                                                            /*Responsive tablet*/

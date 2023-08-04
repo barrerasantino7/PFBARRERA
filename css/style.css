@@ -9,6 +9,7 @@
   margin: 5px;
   padding: 5px;
   background-color: white;
+  overflow: hidden;
 }
 .contenedor .contenedor-tarjeta .tarjeta-img {
   width: 160px;
@@ -34,6 +35,11 @@
   background-color: rgb(25, 90, 95);
   margin: 3px;
   font-family: roboto;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.contenedor .contenedor-tarjeta .tarjeta-cuerpo .precio-btn .boton-carrito:hover {
+  transform: scale(1.1);
 }
 .contenedor .contenedor-tarjeta .tarjeta-cuerpo .precio-btn .boton-carrito span {
   display: none;
@@ -60,6 +66,11 @@
 }
 .encabezado .encabezado__logo {
   width: 10em;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.encabezado .encabezado__logo:hover {
+  transform: scale(1.1);
 }
 .encabezado .encabezado__buscador {
   padding: 10px;
@@ -73,6 +84,7 @@
   font-family: roboto;
   border-radius: 5px;
   margin: 0px 5px;
+  cursor: pointer;
 }
 .encabezado .encabezado__buscador .buscador-carrito {
   color: white;
@@ -108,6 +120,26 @@
   font-family: poppins;
   text-align: center;
   list-style: none;
+  position: relative;
+}
+.navegador .navegador__lista li .lista-producto:hover::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  border-radius: 2px;
+  animation-name: ampliar-subrayado;
+  animation-duration: 0.3s;
+}
+@keyframes ampliar-subrayado {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .navegador .navegador__check {
   display: none;
@@ -125,11 +157,15 @@
 
 /*Categoria de los productos*/
 .categoria {
+  display: flex;
+  justify-content: center;
   font-family: poppins;
   color: rgb(73, 73, 73);
   font-size: 20px;
-  text-align: center;
   margin: 20px;
+}
+.categoria h2 {
+  cursor: pointer;
 }
 
 .contenedor {
@@ -154,7 +190,7 @@ footer div {
   color: white;
 }
 footer div h5 {
-  font-size: 15px;
+  font-size: 20px;
 }
 footer #sn {
   grid-area: sn;
@@ -165,7 +201,7 @@ footer #rs {
 footer #copy {
   grid-area: f;
   color: rgb(73, 73, 73);
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 /*Responsive tablet*/
