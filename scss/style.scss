@@ -1,6 +1,6 @@
 $color-rojo-fuerte:rgb(90, 15, 15);
 $color-fondo: #0f101a;
-$boton0: rgb(42, 72, 107);
+$boton0: rgb(30, 53, 80);
 $boton1: rgb(25, 90, 95);
 $gris:rgb(73, 73, 73);
 @import "tarjeta";
@@ -32,16 +32,25 @@ $gris:rgb(73, 73, 73);
     }
     .encabezado__buscador{
         padding: 10px;
+        .lupa{
+            display: none;
+            color: white;
+            margin: 0px 5px;
+        }
         .buscador-btn{
             border: none;
             background-color: $boton0;
             color: white;
             font-size: 16px;
             padding: 4px;
-            font-family: roboto;
-            border-radius: 2px;
+            font-family: poppins;
+            border-radius: 3px;
             margin: 0px 5px;
             cursor: pointer;
+            transition: 0.2s;
+            &:hover{
+                background-color: $color-fondo;
+            }
         }
         .buscador-carrito{
             color: white;
@@ -49,8 +58,12 @@ $gris:rgb(73, 73, 73);
             font-size: 16px;
             background-color: $boton0;
             padding: 4px;
-            font-family: roboto;
-            border-radius: 2px;
+            font-family: poppins;
+            border-radius: 3px;
+            transition: 0.2s;
+            &:hover{
+                background-color: $color-fondo;
+            }
         }
     }
 }
@@ -210,6 +223,13 @@ footer{
 }
                                                                   /*Responsive tablet*/
 @media (min-width:650px){
+    .encabezado{
+        .encabezado__buscador{
+            .lupa{
+                display: inline-block;
+            }
+        }
+    }
     .contenedor{
         .contenedor-tarjeta{
             display: flex;
@@ -243,8 +263,16 @@ footer{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        .buscador-barra{
-            width: 200px;
+        .encabezado__buscador{
+            .lupa{
+                display: inline-block;
+            }
+            background-color: $boton0;
+            border-radius: 5px;
+            padding: 15px;
+            .buscador-barra{
+                width: 200px;
+            }
         }
     }
 
