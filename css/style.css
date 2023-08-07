@@ -49,11 +49,11 @@
 
 @font-face {
   font-family: poppins;
-  src: url(/fonts/poppins/Poppins-Medium.ttf);
+  src: url(../fonts/poppins/Poppins-Medium.ttf);
 }
 @font-face {
   font-family: roboto;
-  src: url(/fonts/roboto/Roboto-Medium.ttf);
+  src: url(../fonts/roboto/Roboto-Medium.ttf);
 }
 * {
   margin: 0;
@@ -81,6 +81,7 @@
   display: none;
   color: white;
   margin: 0px 5px;
+  cursor: pointer;
 }
 .encabezado .encabezado__buscador .buscador-btn {
   border: none;
@@ -310,6 +311,9 @@ footer #copy {
   .navegador .navegador__lista {
     display: flex;
     justify-content: space-around;
+  }
+  .introduccion .introduccion-texto {
+    width: 1150px;
   }
   .contenedor {
     margin: 50px 0px;
