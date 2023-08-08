@@ -62,6 +62,7 @@
             .secundaria-btn{
                 display: flex;
                 justify-content: space-around;
+                align-items: center;
                 button{
                     background-color: $boton1;
                     border: none;
@@ -105,7 +106,7 @@
                 }
                 .secundaria-btn{
                     button{
-                        font-size: 15px ;
+                        font-size: 15px;
                     }
                 }
             }
@@ -114,5 +115,60 @@
 }
                                                        /*Responsive en PC*/
 @media (min-width:1200px){
-    
+    .carrito-cuerpo{
+        background-color: $color-fondo;
+        .vista{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            .carrito__encabezado{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 15px;
+                .carrito-logo{
+                    width: 320px;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                .carrito-enlace{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 30px;
+                }
+            }
+            .main__tarjetas{
+                display: flex;
+                align-items: center;
+                margin: 10px;
+                .tarjeta__primaria{
+                    width: 75%;
+                    padding: 20px;
+                    box-shadow: 0px 0px 15px $boton0;
+                }
+                .tarjeta__secundaria{
+                    width: 25%;
+                    margin: 25px 0px;
+                    padding: 15px;
+                    box-shadow: 0px 0px 15px $boton0;
+                    .secundaria-img{
+                        img{
+                            width: 40px;
+                            cursor: pointer;
+                            &:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                    .secundaria-btn{
+                        button{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
