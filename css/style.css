@@ -47,6 +47,80 @@
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+.carrito-cuerpo {
+  background-color: #0f101a;
+}
+.carrito-cuerpo .vista {
+  height: 100vh;
+}
+.carrito-cuerpo .vista .carrito__encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carrito-cuerpo .vista .carrito__encabezado .carrito-logo {
+  width: 200px;
+}
+.carrito-cuerpo .vista .carrito__encabezado .carrito-enlace {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+.carrito-cuerpo .vista .tarjeta__primaria {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+.carrito-cuerpo .vista .tarjeta__primaria .primaria-micarrito {
+  text-align: center;
+  margin: 10px 0px;
+}
+.carrito-cuerpo .vista .tarjeta__primaria .primaria-tabla {
+  background-color: rgb(25, 90, 95);
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px;
+}
+.carrito-cuerpo .vista .tarjeta__primaria .primaria-tabla thead {
+  background-color: rgb(30, 53, 80);
+}
+.carrito-cuerpo .vista .tarjeta__primaria .primaria-tabla thead th {
+  border-radius: 5px;
+  border: 1px groove white;
+  color: white;
+}
+.carrito-cuerpo .vista .tarjeta__primaria .primaria-tabla .i-number {
+  width: 25px;
+}
+.carrito-cuerpo .vista .tarjeta__secundaria {
+  background-color: white;
+  margin-top: 20px;
+  padding: 10px;
+}
+.carrito-cuerpo .vista .tarjeta__secundaria .secundaria-img {
+  text-align: center;
+  margin: 10px;
+}
+.carrito-cuerpo .vista .tarjeta__secundaria .secundaria-btn {
+  display: flex;
+  justify-content: space-around;
+}
+.carrito-cuerpo .vista .tarjeta__secundaria .secundaria-btn button {
+  background-color: rgb(25, 90, 95);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}
+
 @font-face {
   font-family: poppins;
   src: url(../fonts/poppins/Poppins-Medium.ttf);
