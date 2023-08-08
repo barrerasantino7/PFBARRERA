@@ -121,6 +121,39 @@
   color: white;
 }
 
+/*Responsive en tablet*/
+@media (min-width: 650px) {
+  .carrito-cuerpo .vista {
+    height: 100vh;
+  }
+  .carrito-cuerpo .vista .tarjeta__primaria {
+    background-color: white;
+    border-radius: 7px;
+    margin: 15px;
+  }
+  .carrito-cuerpo .vista .tarjeta__primaria .primaria-micarrito {
+    text-align: start;
+    margin: 15px;
+  }
+  .carrito-cuerpo .vista .tarjeta__primaria .primaria-tabla {
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .carrito-cuerpo .vista .tarjeta__secundaria {
+    border-radius: 7px;
+    margin: 15px;
+  }
+  .carrito-cuerpo .vista .tarjeta__secundaria .secundaria-img {
+    margin: 20px;
+  }
+  .carrito-cuerpo .vista .tarjeta__secundaria .secundaria-img img {
+    width: 80px;
+  }
+  .carrito-cuerpo .vista .tarjeta__secundaria .secundaria-btn button {
+    font-size: 15px;
+  }
+}
+/*Responsive en PC*/
 @font-face {
   font-family: poppins;
   src: url(../fonts/poppins/Poppins-Medium.ttf);

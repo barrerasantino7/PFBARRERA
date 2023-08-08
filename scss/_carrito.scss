@@ -73,3 +73,46 @@
         }
     }
 }
+                                                         /*Responsive en tablet*/
+@media (min-width:650px){
+    .carrito-cuerpo{
+        
+        .vista{
+            height: 100vh;
+            .tarjeta__primaria{
+                background-color: white;
+                border-radius: 7px;
+                margin: 15px;
+        
+                .primaria-micarrito{
+                    text-align: start;
+                    margin:  15px;
+                }
+                .primaria-tabla{
+                    border-radius: 5px;
+                    margin: 10px;
+                }
+            }
+            .tarjeta__secundaria{
+                border-radius: 7px;
+                margin: 15px;
+                
+                .secundaria-img{
+                    margin: 20px;
+                    img{
+                        width: 80px;
+                    }
+                }
+                .secundaria-btn{
+                    button{
+                        font-size: 15px ;
+                    }
+                }
+            }
+        }
+    }
+}
+                                                       /*Responsive en PC*/
+@media (min-width:1200px){
+    
+}
