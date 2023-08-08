@@ -239,6 +239,9 @@
 .encabezado .encabezado__buscador {
   padding: 10px;
 }
+.encabezado .encabezado__buscador .buscador-barra {
+  width: 150px;
+}
 .encabezado .encabezado__buscador .lupa {
   display: none;
   color: white;

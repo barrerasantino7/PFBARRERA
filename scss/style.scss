@@ -34,6 +34,9 @@ $gris:rgb(73, 73, 73);
     }
     .encabezado__buscador{
         padding: 10px;
+        .buscador-barra{
+            width: 150px;            
+        }
         .lupa{
             display: none;
             color: white;
