@@ -25,7 +25,8 @@
             background-color: white;
             display: flex;
             flex-direction: column;
-            margin: 10px 0px;
+            margin: 10px 10px;
+            border-radius: 7px;
     
             .primaria-micarrito{
                 text-align: center;
@@ -53,7 +54,10 @@
         .tarjeta__secundaria{
             background-color: white;
             margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
             padding: 10px;
+            border-radius: 7px;
             
             .secundaria-img{
                 text-align: center;
@@ -144,12 +148,12 @@
                 align-items: center;
                 margin: 10px;
                 .tarjeta__primaria{
-                    width: 75%;
+                    width: 70%;
                     padding: 20px;
                     box-shadow: 0px 0px 15px $boton0;
                 }
                 .tarjeta__secundaria{
-                    width: 25%;
+                    width: 30%;
                     margin: 25px 0px;
                     padding: 15px;
                     box-shadow: 0px 0px 15px $boton0;
