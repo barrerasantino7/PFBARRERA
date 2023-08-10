@@ -45,7 +45,7 @@ $gris:rgb(73, 73, 73);
         }
         .buscador-btn{
             border: none;
-            background-color: $boton0;
+            background-color: $color-fondo;
             color: white;
             font-size: 16px;
             padding: 4px;
@@ -62,7 +62,7 @@ $gris:rgb(73, 73, 73);
             color: white;
             text-decoration: none;
             font-size: 16px;
-            background-color: $boton0;
+            /*background-color: $boton0;*/
             padding: 4px;
             font-family: poppins;
             border-radius: 3px;
@@ -278,6 +278,9 @@ footer{
             padding: 15px;
             .buscador-barra{
                 width: 200px;
+            }
+            .buscador-btn{
+                background-color: $boton0;
             }
         }
     }

@@ -257,7 +257,7 @@
 }
 .encabezado .encabezado__buscador .buscador-btn {
   border: none;
-  background-color: rgb(30, 53, 80);
+  background-color: #0f101a;
   color: white;
   font-size: 16px;
   padding: 4px;
@@ -274,7 +274,7 @@
   color: white;
   text-decoration: none;
   font-size: 16px;
-  background-color: rgb(30, 53, 80);
+  /*background-color: $boton0;*/
   padding: 4px;
   font-family: poppins;
   border-radius: 3px;
@@ -476,6 +476,9 @@ footer #copy {
   }
   .encabezado .encabezado__buscador .buscador-barra {
     width: 200px;
+  }
+  .encabezado .encabezado__buscador .buscador-btn {
+    background-color: rgb(30, 53, 80);
   }
   .navegador .navegador__menu {
     display: none;
