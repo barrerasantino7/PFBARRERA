@@ -73,6 +73,9 @@
   color: white;
   font-size: 30px;
 }
+.carrito-cuerpo .vista .carrito__encabezado .carrito-enlace-2 {
+  color: rgb(73, 73, 73);
+}
 .carrito-cuerpo .vista .tarjeta__primaria {
   background-color: white;
   display: flex;
